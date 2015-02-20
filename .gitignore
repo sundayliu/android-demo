@@ -27,3 +27,6 @@ proguard/
 libs/
 
 .DS_Store
+.classpath
+.project
+.cproject
