@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">JasperActivity</string>
+    <string name="app_name">Android Demo</string>
+    <string name="google_android_sdk_3_version">Google Android SDK范例大全 3</string>
+    <string name="professional_android_4_application_development">Android 4 高级编程</string>
 </resources>

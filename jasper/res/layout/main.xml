@@ -4,10 +4,17 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, JasperActivity"
-    />
+	<Button
+	    android:id="@+id/google_android_sdk_3_version"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:text="@string/google_android_sdk_3_version" />
+
+	<Button
+	    android:id="@+id/professional_android_4_application_development"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:text="@string/professional_android_4_application_development" />
+
 </LinearLayout>
 
