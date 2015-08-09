@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MainActivity</string>
+    <string name="app_name">Hello</string>
+    <string name="hello_world">Hello World!</string>
+    
+    <string name="mobile">Phone number</string>
+    <string name="sms_content">Message content</string>
+    <string name="button_dial">Dial</string>
+    <string name="button_send_message">Send Message</string>
+    
+    <string name="main_dial_phone">dial phone</string>
+    <string name="main_send_sms">send message</string>
+    
+    <string name="success">Send success</string>
 </resources>
