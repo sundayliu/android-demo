@@ -25,6 +25,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/sms_content"
     android:inputType="text"
+    android:minLines="3"
     />
 <Button 
     android:layout_width="wrap_content"
