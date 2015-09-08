@@ -3,13 +3,16 @@
       package="com.sundayliu.unittestandlog"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name="UnitTestActivity"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="19" />
+    <application 
+        android:label="@string/app_name" 
+        android:icon="@drawable/ic_launcher"
+        android:allowBackup="false">
+        <uses-library android:name="android.test.runner" />
     </application>
+    <instrumentation 
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.sundayliu.unittestandlog"
+        android:label="Tests for My App"
+        />
 </manifest>
