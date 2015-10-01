@@ -1,4 +1,4 @@
-package com.angelsoft.reader;
+ï»¿package com.angelsoft.reader;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-/* author by @»¹ÊÇÅóÓÑ
+/* author by @è¿˜æ˜¯æœ‹å‹
  * email: litangel_zhang@163.com
  * qq:    5711654
  * */
@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.main );
         init ();
-        mAdapter = new ShelfAdapter ();//new adapter¶ÔÏó²ÅÄÜÓÃ
+        mAdapter = new ShelfAdapter ();//new adapterå¯¹è±¡æ‰èƒ½ç”¨
         shelf_list.setAdapter ( mAdapter );
     }
 
