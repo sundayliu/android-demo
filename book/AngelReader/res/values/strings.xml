@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="hello">Hello World, ReaderActivity!</string>
+	<string name="app_name">天使书架</string>
+	<string name="book_name1">琅琊榜</string>
+	<string name="book_name2">云中歌</string>
+	<string name="book_name3">大漠谣</string>
+
+</resources>
