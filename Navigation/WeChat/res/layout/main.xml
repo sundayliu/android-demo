@@ -4,10 +4,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, WeChat"
-    />
+
+    <include layout="@layout/top_layout" />
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/id_viewpage"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff">
+        
+    </android.support.v4.view.ViewPager>
+    <include layout="@layout/bottom_layout" />
 </LinearLayout>
 

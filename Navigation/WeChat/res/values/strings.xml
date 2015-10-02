@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WeChat</string>
+    <string name="top_title">微信</string>
+    
+    <string name="tab_weixin">微信</string>
+    <string name="tab_contact">通讯录</string>
+    <string name="tab_discover">发现</string>
+    <string name="tab_me">我</string>
 </resources>
