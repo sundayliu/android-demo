@@ -24,7 +24,7 @@ proguard/
 
 # Log Files
 *.log
-libs/
+libs/armeabi/
 
 .DS_Store
 .classpath
