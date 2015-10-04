@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_content">
+        <item>HOME</item>
+        <item>AAAA</item>
+        <item>BBBB</item>
+        <item>CCCC</item>
+        <item>DDDD</item>
+        <item>EEEE</item>
+    </string-array>
+</resources>
