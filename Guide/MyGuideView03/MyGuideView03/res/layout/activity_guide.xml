@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_guide_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_weight="1.5"
+            android:background="@drawable/guide_btn_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="注  册"
+            android:textColor="#FFFFFF"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@+id/btn_look_at_the_people_i_know"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/guide_btn_white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="看看我认识的人"
+            android:textColor="#000000"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_weight="1.5"
+            android:background="@drawable/guide_btn_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="登  录"
+            android:textColor="#FFFFFF"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+</RelativeLayout>

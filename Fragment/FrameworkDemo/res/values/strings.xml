@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FrameworkDemo02</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="home">首页</string>
+    <string name="order">待办订单</string>
+    <string name="notice">系统公告</string>
+    <string name="more">更多</string>
+
+</resources>

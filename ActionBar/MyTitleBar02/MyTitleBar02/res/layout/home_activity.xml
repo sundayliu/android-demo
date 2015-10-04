@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundcolor"
+    tools:ignore="ContentDescription" >
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/home_layout_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@drawable/title_bg"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_topbar_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 我的贴吧 -->
+            <ImageButton
+                android:id="@+id/home_bt_like"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+                android:src="@drawable/home_bt_like_on" />
+
+            <!-- 我的标签 -->
+            <ImageButton
+                android:id="@+id/home_bt_mark"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+                android:src="@drawable/home_bt_mark" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/home_layout_bar"
+        android:layout_marginTop="-12.0dip" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wifi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="qinjin_tp_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信号强度  :" />
+
+        <TextView
+            android:id="@+id/wifi_name_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="还没有连接" />
+    </LinearLayout>
+
+</LinearLayout>

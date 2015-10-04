@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_above="@+id/btnShareAllGui"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_back"
+        android:text="用户授权登录" 
+        android:textSize="16dp"/>
+       
+    <Button
+        android:id="@+id/btnShareAllGui"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_above="@+id/btnShareAll"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_back"
+        android:text="分享全部（有分享界面）"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnShareAll"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_back"
+        android:text="分享全部（无界面，直接分享）"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/btnShareAll"
+        android:layout_margin="5dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/btn_back"
+        android:text="获取授权用户资料" 
+        android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+package com.zhf.frameworkdemo02.view;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import com.zhf.frameworkdemo02.R;
+import com.zhf.frameworkdemo02.fragments.GeneralFragment;
+
+/**
+ * ¶©µ¥Ò³Ãæ
+ * @author ZHF
+ *
+ */
+public class OrderView extends GeneralFragment{
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		super.setTitle("¶©µ¥");
+	}
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		return inflater.inflate(R.layout.order, container, false);
+	}
+}

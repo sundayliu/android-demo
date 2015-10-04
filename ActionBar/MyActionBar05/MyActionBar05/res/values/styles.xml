@@ -1,0 +1,40 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme"></style>
+
+    <!-- 将自定义的style取名为CustomTheme，父类为Theme.Holo.Light，也就是说默认背景是白底黑字（如果是Theme.Holo，则默认是黑底白字） -->
+    <style name="CustomTheme" parent="android:style/Theme.Holo.Light">
+        <!-- 这是item的背景修改，不按时透明，按时显示绿色  -->
+        <item name="android:selectableItemBackground">@drawable/ad_selectable_background</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabTextStyle</item>
+		<item name="android:actionDropDownStyle">@style/MyDropDownNav</item>   
+        <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>       
+    </style>
+
+    <!-- Tab选项标签的样式 -->
+    <style name="MyActionBarTabStyle" parent="android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+    </style>
+
+    <!-- Tab选项标签字体的样式 -->
+    <style name="MyActionBarTabTextStyle" parent="android:style/Widget.Holo.Light.ActionBar.TabText">        
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">12sp</item>   
+    </style>
+
+    <!-- 下拉导航外部按钮的样式 -->
+    <style name="MyDropDownNav" parent="android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/ad_spinner_background_holo_light</item>
+        <item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/ad_selectable_background</item>
+    </style>
+    
+     <!-- 下拉导航内部按钮的样式 -->
+     <style name="MyDropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/ad_selectable_background</item>
+    </style>
+    
+</resources>

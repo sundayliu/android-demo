@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyActionBar03</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="action_list">
+        <item>数据1</item>
+        <item>数据2</item>
+        <item>数据3</item>
+        <item>数据4</item>
+    </string-array>
+
+</resources>
