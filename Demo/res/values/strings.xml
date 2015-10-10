@@ -5,4 +5,7 @@
     <string name="item_description">Description</string>
     <string name="item_title">Example</string>
     <string name="label">label</string>
+    
+    <string name="Deleted">Deleted</string>
+    <string name="Undo">Undo</string>
 </resources>

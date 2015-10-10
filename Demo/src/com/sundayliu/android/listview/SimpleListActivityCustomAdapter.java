@@ -1,24 +1,23 @@
 package com.sundayliu.android.listview;
 
+import com.sundayliu.android.adapter.SimpleArrayAdapter;
+
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-//import com.sundayliu.android.adapter.*;
-
-public class SimpleListActivityExample extends ListActivity {
+public class SimpleListActivityCustomAdapter extends ListActivity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
             "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
             "Linux", "OS/2" };
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-            android.R.layout.simple_list_item_1, values);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        //    android.R.layout.simple_list_item_1, values);
         
-        //SimpleArrayAdapter adapter = new SimpleArrayAdapter(this, values);
+        SimpleArrayAdapter adapter = new SimpleArrayAdapter(this, values);
         setListAdapter(adapter);
       }
 
