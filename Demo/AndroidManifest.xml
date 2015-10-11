@@ -13,6 +13,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.sundayliu.demo.ListViewActivity" android:label="ListView"></activity>
+        
+        <activity android:name="com.sundayliu.android.listview.CustomListActivityExample"></activity>
+        <activity android:name="com.sundayliu.android.listview.ListViewActionBarActivity"></activity>
+        <activity android:name="com.sundayliu.android.listview.ListViewExampleActivity"></activity>
+        <activity android:name="com.sundayliu.android.listview.ListViewUndoActivity"></activity>
+        <activity android:name="com.sundayliu.android.listview.MultipleListViewActivity"></activity>
+        <activity android:name="com.sundayliu.android.listview.SimpleCursorActivity"></activity>
+        <activity android:name="com.sundayliu.android.listview.SimpleListActivityCustomAdapter"></activity>
+        <activity android:name="com.sundayliu.android.listview.SimpleListActivityExample"></activity>
+        <activity android:name="com.sundayliu.android.listview.SimpleListActivityPerformanceAdapter"></activity>
+        <activity android:name="com.sundayliu.android.listview.SingleListViewActivity"></activity>
+        <activity android:name="com.sundayliu.android.listview.TwoListItemsActivity"></activity>
     </application>
     
 </manifest>
