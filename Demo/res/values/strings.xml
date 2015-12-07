@@ -8,4 +8,7 @@
     
     <string name="Deleted">Deleted</string>
     <string name="Undo">Undo</string>
+    
+    <string name="bookshelf_title">阅读器书架</string>
+    <string name="bookshelf_manage">管理</string>
 </resources>

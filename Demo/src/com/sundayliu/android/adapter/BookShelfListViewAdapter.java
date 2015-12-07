@@ -24,7 +24,7 @@ public class BookShelfListViewAdapter extends BaseAdapter {
      * @param bookshelfList
      * @param context
      */
-    public bookshelfListViewAdapter(ArrayList<BookData> bookshelfList, Context context) {
+    public BookShelfListViewAdapter(ArrayList<BookData> bookshelfList, Context context) {
         this.bookshelfList = bookshelfList;
         this.context = context;
     }
@@ -48,7 +48,7 @@ public class BookShelfListViewAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         //装载view
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
-        View view = layoutInflater.inflate(R.layout.bookshelf, null);
+        View view = layoutInflater.inflate(R.layout.listview_bookshelf, null);
 
         //获取控件
         ImageView bookImageView = (ImageView) view.findViewById(R.id.book_image);

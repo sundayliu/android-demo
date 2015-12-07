@@ -1,18 +1,28 @@
 package com.sundayliu.android.listview;
 
-import android.os.Bundle;
+import java.util.ArrayList;
 
-public class BookShelfListView {
+import android.app.Activity;
+import android.os.Bundle;
+//import android.view.Window;
+//import android.widget.Button;
+import android.widget.ListView;
+
+import com.sundayliu.demo.*;
+import com.sundayliu.android.model.BookData;
+import com.sundayliu.android.adapter.*;
+
+public class BookShelfListView extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //设置主页面的标题栏
-        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        setContentView(R.layout.activity_main);
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title_bar);
+        //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+        setContentView(R.layout.activity_bookshelf);
+        //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title_bar_bookshelf);
         
         //更新标题栏中按钮的字体大小
-        Button btnManage = (Button) findViewById(R.id.btn_manage);
-        btnManage.setTextSize(10);
+        //Button btnManage = (Button) findViewById(R.id.btn_manage);
+        //btnManage.setTextSize(10);
         
         //获取书架列表数据
         ArrayList<BookData> bookshelf = new ArrayList<BookData>();
@@ -43,7 +53,7 @@ public class BookShelfListView {
         bookshelf.add(bookData);
         bookshelf.add(bookData2);
         
-        bookshelfListViewAdapter bookshelfListViewAdapter = new bookshelfListViewAdapter(bookshelf, this);
+        BookShelfListViewAdapter bookshelfListViewAdapter = new BookShelfListViewAdapter(bookshelf, this);
         ListView listView = (ListView) findViewById(R.id.listview_bookshelf);
         listView.setAdapter(bookshelfListViewAdapter);
     }
