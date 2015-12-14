@@ -14,4 +14,8 @@
     
     <string name="title">标题</string>
     <string name="description">简单描述</string>
+    
+    <string name="is_connected">Is Connected?</string>
+    
+    <string name="request">请求</string>
 </resources>

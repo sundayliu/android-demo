@@ -23,6 +23,7 @@ public class Demo extends ListActivity
 
         {
             put("ListView", "com.sundayliu.demo.ListViewActivity");
+            put("Network", "com.sundayliu.demo.NetworkActivity");
         }
         
     };
