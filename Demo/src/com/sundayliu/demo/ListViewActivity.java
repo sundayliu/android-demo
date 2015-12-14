@@ -33,6 +33,7 @@ public class ListViewActivity extends ListActivity {
             put("009 Two List Items", "com.sundayliu.android.listview.TwoListItemsActivity");
             put("010 Example", "com.sundayliu.android.listview.ListViewExampleActivity");
             put("011 BookShelf", "com.sundayliu.android.listview.BookShelfListView");
+            put("012 PcsaltActivity", "com.sundayliu.android.listview.PcsaltActivity");
         }
         
     };

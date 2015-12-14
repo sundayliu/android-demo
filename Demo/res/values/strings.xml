@@ -11,4 +11,7 @@
     
     <string name="bookshelf_title">阅读器书架</string>
     <string name="bookshelf_manage">管理</string>
+    
+    <string name="title">标题</string>
+    <string name="description">简单描述</string>
 </resources>

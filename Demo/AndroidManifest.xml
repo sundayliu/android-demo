@@ -27,6 +27,7 @@
         <activity android:name="com.sundayliu.android.listview.SingleListViewActivity"></activity>
         <activity android:name="com.sundayliu.android.listview.TwoListItemsActivity"></activity>
         <activity android:name="com.sundayliu.android.listview.BookShelfListView"></activity>
+        <activity android:name="com.sundayliu.android.listview.PcsaltActivity"></activity>
     </application>
     
 </manifest>
