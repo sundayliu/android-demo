@@ -22,7 +22,9 @@ public class NetworkActivity extends ListActivity {
 
         {
             put("000 HttpClient", "com.sundayliu.android.network.HttpActivity");
-            put("000 Http2Client", "com.sundayliu.android.network.Http2Activity");
+            put("001 Http2Client", "com.sundayliu.android.network.Http2Activity");
+            put("002 GetJson", "com.sundayliu.android.network.GetJsonActivity");
+            put("003 PostJson", "com.sundayliu.android.network.PostJsonActivity");
         }
         
     };

@@ -40,6 +40,8 @@
         
         <activity android:name="com.sundayliu.android.network.HttpActivity"></activity>
         <activity android:name="com.sundayliu.android.network.Http2Activity"></activity>
+        <activity android:name="com.sundayliu.android.network.GetJsonActivity"></activity>
+        <activity android:name="com.sundayliu.android.network.PostJsonActivity"></activity>
     </application>
     
 </manifest>

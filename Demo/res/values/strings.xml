@@ -18,4 +18,8 @@
     <string name="is_connected">Is Connected?</string>
     
     <string name="request">请求</string>
+    <string name="send">发送</string>
+    <string name="name">名字</string>
+    <string name="country">国家</string>
+    <string name="twitter">推特</string>
 </resources>
