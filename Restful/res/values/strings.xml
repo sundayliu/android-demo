@@ -20,4 +20,8 @@
     <string name="signup">注册</string>
     
     <string name="hello_restful">Hello World, Restful</string>
+    
+    <string name="default_degree">-36°</string>
+    <string name="default_error">ERROR</string>
+    <string name="default_weather">Sunny</string>
 </resources>

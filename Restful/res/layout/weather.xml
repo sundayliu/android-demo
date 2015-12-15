@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#FF5722">
+ 
+        <!-- image -->
+        <ImageView
+		   android:id="@+id/main_bg"
+		   android:layout_width="match_parent"
+		   android:layout_height="match_parent"
+		   android:scaleType="centerCrop"/>
+ 
+    </RelativeLayout>
+ 
+    <RelativeLayout
+        android:layout_weight="0.4"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:background="#212121">
+ 
+        <!-- TextViews -->
+        <TextView
+		    android:id="@+id/error"
+		    android:layout_centerInParent="true"
+		    android:visibility="gone"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:textSize="20sp"
+		    android:textColor="#FF5722"
+		    android:layout_margin="@dimen/activity_horizontal_margin"
+		    android:gravity="center"
+		    android:text="@string/default_error"/>
+		 
+		<TextView
+		    android:id="@+id/degrees"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:textSize="90sp"
+		    android:textColor="#FF5722"
+		    android:text="@string/default_degree"/>
+		 
+		<TextView
+		    android:id="@+id/weather"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/degrees"
+		    android:textSize="30sp"
+		    android:gravity="center"
+		    android:textColor="#FF5722"
+		    android:text="@string/default_weather"/>
+ 
+    </RelativeLayout>
+
+</LinearLayout>
