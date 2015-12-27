@@ -1,4 +1,4 @@
-package com.horse;
+ï»¿package com.horse;
 
 import com.horse.R;
 import com.horse.util.IOHelper;
@@ -18,7 +18,7 @@ public class StartActivity extends Activity {
 	}
 	
 	/**
-	 * Æô¶¯·âÃæºó¹ý»á×ªÏòÖ÷½çÃæ
+	 * å¯åŠ¨å°é¢åŽè¿‡ä¼šè½¬å‘ä¸»ç•Œé¢
 	 */
 	public void gotoHome(){
 		new Thread(new Runnable(){
@@ -41,10 +41,10 @@ public class StartActivity extends Activity {
 	}
 	
 	/**
-	 * ½«BookÀà³õÊ¼»¯¡£
-	 * ÒòÎªÆô¶¯½çÃæ£¬Ò»°ã»áÏÔÊ¾¼¸ÃëÖÓÔÙÌø×ªµ½Ö÷½çÃæ¡£
-	 * ¶øBookÀàÐèÒª´ÓÎÄ¼þÖÐÌáÈ¡¹ØÓÚÊéµÄÐÅÏ¢£¬Õâ¿ÉÄÜÐèÒªÒ»¶¨Ê±¼ä¡£ËùÒÔ½«ÊéµÄ³õÊ¼»¯¹¤×÷·ÅÔÚÆô¶¯½çÃæÕâÀï¡£
-	 * ¿ÉÒÔ½ÚÊ¡ÓÃ»§µÈ´ýµÄÊ±¼ä¡£
+	 * å°†Bookç±»åˆå§‹åŒ–ã€‚
+	 * å› ä¸ºå¯åŠ¨ç•Œé¢ï¼Œä¸€èˆ¬ä¼šæ˜¾ç¤ºå‡ ç§’é’Ÿå†è·³è½¬åˆ°ä¸»ç•Œé¢ã€‚
+	 * è€ŒBookç±»éœ€è¦ä»Žæ–‡ä»¶ä¸­æå–å…³äºŽä¹¦çš„ä¿¡æ¯ï¼Œè¿™å¯èƒ½éœ€è¦ä¸€å®šæ—¶é—´ã€‚æ‰€ä»¥å°†ä¹¦çš„åˆå§‹åŒ–å·¥ä½œæ”¾åœ¨å¯åŠ¨ç•Œé¢è¿™é‡Œã€‚
+	 * å¯ä»¥èŠ‚çœç”¨æˆ·ç­‰å¾…çš„æ—¶é—´ã€‚
 	 */
 	public void initBook(){
 		IOHelper.getBook(this);		

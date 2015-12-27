@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bezier</string>
+    <string name="BezierView">BezierView</string>
+    <string name="BezierEvaluator">BezierEvaluator</string>
+    <string name="DropPagerIndicator">DropPagerIndicator</string>
+    
+    <string name="Bezier">Bezier</string>
+    <string name="Pager">Pager</string>
+    
+    <string name="clip_path">ClipPath Demo</string>
+</resources>

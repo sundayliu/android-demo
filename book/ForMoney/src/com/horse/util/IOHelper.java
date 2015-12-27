@@ -1,4 +1,4 @@
-package com.horse.util;
+ï»¿package com.horse.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,8 +13,8 @@ import android.content.Context;
 import android.content.res.Resources;
 
 /**
- * Éè¼Æ´ËÀàµÄÄ¿µÄÊÇ±ãÓÚÍ³Ò»¹ÜÀí£¬´Ó×ÊÔ´ÎÄ¼şÖĞ¶ÁÈ¡Êı¾İ¡£ appÖĞµÄËùÓĞÊı¾İÀ´Ô´¶¼¿ÉÒÔÍ¨¹ıÕâ¸öÀàÀ´Ìá¹©£¬ÕâÑùÔÚ½«À´ÖØÓÃ´úÂëµÄÊ±ºò£¬Ò²·½±ãĞŞ¸Ä¡£
- * ¶øÇÒÔÚ¸÷¸öÀàµÄÂß¼­ÈÎÎñÉÏÒ²ÇåÎú¿É¼û¡£ ÆäÄ¿Ç°Ëù×öµÄÈÎÎñ°üÀ¨£¬³õÊ¼»¯BookÀà£¬´Ó×ÊÔ´ÎÄ¼şÖĞ¶ÁÈ¡ÕÂ½ÚÄÚÈİÀ´³õÊ¼»¯Chapter¶ÔÏó¡£
+ * è®¾è®¡æ­¤ç±»çš„ç›®çš„æ˜¯ä¾¿äºç»Ÿä¸€ç®¡ç†ï¼Œä»èµ„æºæ–‡ä»¶ä¸­è¯»å–æ•°æ®ã€‚ appä¸­çš„æ‰€æœ‰æ•°æ®æ¥æºéƒ½å¯ä»¥é€šè¿‡è¿™ä¸ªç±»æ¥æä¾›ï¼Œè¿™æ ·åœ¨å°†æ¥é‡ç”¨ä»£ç çš„æ—¶å€™ï¼Œä¹Ÿæ–¹ä¾¿ä¿®æ”¹ã€‚
+ * è€Œä¸”åœ¨å„ä¸ªç±»çš„é€»è¾‘ä»»åŠ¡ä¸Šä¹Ÿæ¸…æ™°å¯è§ã€‚ å…¶ç›®å‰æ‰€åšçš„ä»»åŠ¡åŒ…æ‹¬ï¼Œåˆå§‹åŒ–Bookç±»ï¼Œä»èµ„æºæ–‡ä»¶ä¸­è¯»å–ç« èŠ‚å†…å®¹æ¥åˆå§‹åŒ–Chapterå¯¹è±¡ã€‚
  * 
  * @author MJZ
  * 
@@ -26,10 +26,10 @@ public class IOHelper {
 	private static Resources res;
 
 	/**
-	 * ³õÊ¼»¯BookÀàµÄÎ¨Ò»¶ÔÏó¡£ Õâ¸öº¯ÊıÒ»°ãÖ»»áµ÷ÓÃÒ»´Î¡£
+	 * åˆå§‹åŒ–Bookç±»çš„å”¯ä¸€å¯¹è±¡ã€‚ è¿™ä¸ªå‡½æ•°ä¸€èˆ¬åªä¼šè°ƒç”¨ä¸€æ¬¡ã€‚
 	 * 
 	 * @param context
-	 *            ÓÉÓÚ´ÓÎÄ¼şÖĞ¶ÁÈ¡×ÊÔ´£¬ÔòĞèÒªÍ¨¹ıActivity À´Ìá¹©¡£Òò´ËÔÚActivityµ÷ÓÃ´Ëº¯ÊıµÄÊ±ºò£¬»á´«Èë this¡£
+	 *            ç”±äºä»æ–‡ä»¶ä¸­è¯»å–èµ„æºï¼Œåˆ™éœ€è¦é€šè¿‡Activity æ¥æä¾›ã€‚å› æ­¤åœ¨Activityè°ƒç”¨æ­¤å‡½æ•°çš„æ—¶å€™ï¼Œä¼šä¼ å…¥ thisã€‚
 	 * @return
 	 */
 	public static Book getBook(Context context) {
@@ -39,13 +39,13 @@ public class IOHelper {
 		String booklists[] = res.getStringArray(R.array.booklists);
 		chapterPaths = res.getStringArray(R.array.content_path);
 
-		// ÉèÖÃBook ¶ÔÏóµÄĞÅÏ¢
+		// è®¾ç½®Book å¯¹è±¡çš„ä¿¡æ¯
 		book.setAuthor(res.getString(R.string.author));
 		book.setBookname(res.getString(R.string.bookname));
 
-		//ÏÂÃæß@‚€ifÓï¾äÊÇÒòÎª³öÏÖ¸öbug¶øĞ´µÄ£¬ËüÆäÊµ²»Ó¦¸Ã´æÔÚ¡£
-		//²Â²âµÄÔ­Òò¿ÉÄÜÊÇÔÚÈí¼şÍË³öµÄÊ±ºò£¬BookÀà¶ÔÏóÃ»ÓĞ±»Ïú»Ù£¬ÔòÔÙ´ÎÆô¶¯Èí¼şµÄÊ±ºò
-		//ÓÖ¸øËüÌí¼ÓÁËÒ»´ÎÕÂ½ÚĞÅÏ¢
+		//ä¸‹é¢é€™å€‹ifè¯­å¥æ˜¯å› ä¸ºå‡ºç°ä¸ªbugè€Œå†™çš„ï¼Œå®ƒå…¶å®ä¸åº”è¯¥å­˜åœ¨ã€‚
+		//çŒœæµ‹çš„åŸå› å¯èƒ½æ˜¯åœ¨è½¯ä»¶é€€å‡ºçš„æ—¶å€™ï¼ŒBookç±»å¯¹è±¡æ²¡æœ‰è¢«é”€æ¯ï¼Œåˆ™å†æ¬¡å¯åŠ¨è½¯ä»¶çš„æ—¶å€™
+		//åˆç»™å®ƒæ·»åŠ äº†ä¸€æ¬¡ç« èŠ‚ä¿¡æ¯
 		if (book.getChapterList().size() != booklists.length)
 			for (int i = 0; i < booklists.length; ++i)
 				book.addChapter(booklists[i]);
@@ -54,12 +54,12 @@ public class IOHelper {
 	}
 
 	/**
-	 * µÃµ½ÕÂ½ÚÄÚÈİ¡£
+	 * å¾—åˆ°ç« èŠ‚å†…å®¹ã€‚
 	 * 
 	 * @param order
-	 *            Òª¶ÁÈ¡µÄÕÂ½ÚµÄË³Ğò¡£
+	 *            è¦è¯»å–çš„ç« èŠ‚çš„é¡ºåºã€‚
 	 * @param context
-	 *            Í¨¹ıcontextÀ´µÃµ½ Resources ¶ÔÏó£¬´Ó¶ø»ñÈ¡×ÊÔ´¡£
+	 *            é€šè¿‡contextæ¥å¾—åˆ° Resources å¯¹è±¡ï¼Œä»è€Œè·å–èµ„æºã€‚
 	 * @return
 	 */
 	public static Chapter getChapter(int order) {

@@ -1,4 +1,4 @@
-package com.horse.util;
+ï»¿package com.horse.util;
 
 import java.text.DecimalFormat;
 import java.util.Vector;
@@ -13,56 +13,75 @@ import android.graphics.Paint.Align;
 import android.text.format.Time;
 
 /**
- * Õâ¸öÀàµÄÄ¿µÄÊÇÎªÔÚ¿´Êé·­Ò³Ê±£¬ĞèÒª½øĞĞµÄ¶¯×÷Ìá¹©½Ó¿Ú¡£
- * °üÀ¨·­ÏòÏÂÒ»Ò³£¬·­ÏòÉÏÒ»Ò³¡£ÔÚ·­µ½Ã¿ÕÂ×îºóÒ»Ò³Ê±£¬Èç¹ûºóÃæ»¹ÓĞÕÂ½Ú¾Í¼ÌĞø·­ÏòÏÂÒ»ÕÂ½Ú£¬Ã»ÓĞ¾ÍÏòÓÃ»§ÏÔÊ¾ÒÑ¶ÁÍê¡£
- * ÔÚ·­ÏòÉÏÒ»ÕÂ½ÚÊ±£¬Èç¹ûÇ°Ãæ»¹ÓĞÕÂ½Ú£¬¾Í·­µ½ÉÏÒ»ÕÂ½Ú£¬Ã»ÓĞ¾ÍÏòÓÃ»§ÏÔÊ¾£¬ÕâÒÑ¾­ÊÇµÚÒ»ÕÂ½Ú¡£
+ * è¿™ä¸ªç±»çš„ç›®çš„æ˜¯ä¸ºåœ¨çœ‹ä¹¦ç¿»é¡µæ—¶ï¼Œéœ€è¦è¿›è¡Œçš„åŠ¨ä½œæä¾›æ¥å£ã€‚
+ * åŒ…æ‹¬ç¿»å‘ä¸‹ä¸€é¡µï¼Œç¿»å‘ä¸Šä¸€é¡µã€‚åœ¨ç¿»åˆ°æ¯ç« æœ€åä¸€é¡µæ—¶ï¼Œå¦‚æœåé¢è¿˜æœ‰ç« èŠ‚å°±ç»§ç»­ç¿»å‘ä¸‹ä¸€ç« èŠ‚ï¼Œæ²¡æœ‰å°±å‘ç”¨æˆ·æ˜¾ç¤ºå·²è¯»å®Œã€‚
+ * åœ¨ç¿»å‘ä¸Šä¸€ç« èŠ‚æ—¶ï¼Œå¦‚æœå‰é¢è¿˜æœ‰ç« èŠ‚ï¼Œå°±ç¿»åˆ°ä¸Šä¸€ç« èŠ‚ï¼Œæ²¡æœ‰å°±å‘ç”¨æˆ·æ˜¾ç¤ºï¼Œè¿™å·²ç»æ˜¯ç¬¬ä¸€ç« èŠ‚ã€‚
  * 
- * ÔÚÖ±¾õÉÏÈÏÎªÕâ¸öÓ¦¸ÃÖ»ÉèÖÃ³ÉÒ»¸ö½Ó¿Ú£¬ÒòÎªÖ»ĞèÏòÊÓÍ¼²ãÌá¹©¶¯×÷½Ó¿Ú£¬Ò²¾ÍÊÇ±¾ÀàÓ¦ÊôÓÚÄ£ĞÍ²ã¡£ÔòÆäÉèÖÃÎªÒ»¸ö½è¿Ú¿ÉÄÜÒ²ºÏÊÊ¡£
- * µ«ÊÇÈç¹ûÉèÖÃ³ÉÒ»¸ö½Ó¿Ú£¬ÄÇÃ´½Ó¿ÚµÄÊµÏÖÀà£¬ÓĞ¶à¸ö¶¼Òª±£´æµÄÊı¾İ¡£ÄÇÃ´ÎªÁË´úÂëÖØÓÃ£¬³éÏóÀà¿ÉÄÜ±È½Ó¿Ú¸ü¼ÓºÏÊÊ¡£ ÉÏÃæÊÇ¸öÈË·ÖÎö£¬¿ÉÄÜ²»ÊÇºÜºÏÊÊ¡£
+ * åœ¨ç›´è§‰ä¸Šè®¤ä¸ºè¿™ä¸ªåº”è¯¥åªè®¾ç½®æˆä¸€ä¸ªæ¥å£ï¼Œå› ä¸ºåªéœ€å‘è§†å›¾å±‚æä¾›åŠ¨ä½œæ¥å£ï¼Œä¹Ÿå°±æ˜¯æœ¬ç±»åº”å±äºæ¨¡å‹å±‚ã€‚åˆ™å…¶è®¾ç½®ä¸ºä¸€ä¸ªå€Ÿå£å¯èƒ½ä¹Ÿåˆé€‚ã€‚
+ * ä½†æ˜¯å¦‚æœè®¾ç½®æˆä¸€ä¸ªæ¥å£ï¼Œé‚£ä¹ˆæ¥å£çš„å®ç°ç±»ï¼Œæœ‰å¤šä¸ªéƒ½è¦ä¿å­˜çš„æ•°æ®ã€‚é‚£ä¹ˆä¸ºäº†ä»£ç é‡ç”¨ï¼ŒæŠ½è±¡ç±»å¯èƒ½æ¯”æ¥å£æ›´åŠ åˆé€‚ã€‚ ä¸Šé¢æ˜¯ä¸ªäººåˆ†æï¼Œå¯èƒ½ä¸æ˜¯å¾ˆåˆé€‚ã€‚
  * 
  * @author MJZ
  * 
  */
 public class BookPage {
 	// configuration information
-	private int screenWidth; // ÆÁÄ»¿í¶È
-	private int screenHeight; // ÆÁÄ»¸ß¶È
-	private int fontSize; // ×ÖÌå´óĞ¡
-	private int lineHgight;	//Ã¿ĞĞµÄ¸ß¶È
-	private int marginWidth = 15; // ×óÓÒÓë±ßÔµµÄ¾àÀë
-	private int marginHeight = 15; // ÉÏÏÂÓë±ßÔµµÄ¾àÀë
-	private int textColor; // ×ÖÌåÑÕÉ«
-	private Bitmap bgBitmap; // ±³¾°Í¼Æ¬
-	private int bgColor; // ±³¾°ÑÕÉ«
+	private int screenWidth; // å±å¹•å®½åº¦
+	private int screenHeight; // å±å¹•é«˜åº¦
+	private int fontSize; // å­—ä½“å¤§å°
+	private int lineHgight;	//æ¯è¡Œçš„é«˜åº¦
+	private int marginWidth = 15; // å·¦å³ä¸è¾¹ç¼˜çš„è·ç¦»
+	private int marginHeight = 15; // ä¸Šä¸‹ä¸è¾¹ç¼˜çš„è·ç¦»
+	private int textColor; // å­—ä½“é¢œè‰²
+	private Bitmap bgBitmap; // èƒŒæ™¯å›¾ç‰‡
+	private int bgColor; // èƒŒæ™¯é¢œè‰²
 
 	private Paint paint;
 	private Paint paintBottom;
-	private int visibleWidth; // ÆÁÄ»ÖĞ¿ÉÏÔÊ¾ÎÄ±¾µÄ¿í¶È
+	private int visibleWidth; // å±å¹•ä¸­å¯æ˜¾ç¤ºæ–‡æœ¬çš„å®½åº¦
 	private int visibleHeight;
-	private Chapter chapter; // ĞèÒª´¦ÀíµÄÕÂ½Ú¶ÔÏó
-	private Vector<String> linesVe; // ½«ÕÂ½ÚƒÈÈİ·Ö³ÉĞĞ£¬²¢½«Ã¿Ò³°´ĞĞ´æ´¢µ½vector¶ÔÏóÖĞ
-	private int lineCount; // Ò»¸öÕÂ½ÚÔÚµ±Ç°ÅäÖÃÏÂÒ»¹²ÓĞ¶àÉÙĞĞ
+	private Chapter chapter; // éœ€è¦å¤„ç†çš„ç« èŠ‚å¯¹è±¡
+	private Vector<String> linesVe; // å°†ç« èŠ‚å…§å®¹åˆ†æˆè¡Œï¼Œå¹¶å°†æ¯é¡µæŒ‰è¡Œå­˜å‚¨åˆ°vectorå¯¹è±¡ä¸­
+	private int lineCount; // ä¸€ä¸ªç« èŠ‚åœ¨å½“å‰é…ç½®ä¸‹ä¸€å…±æœ‰å¤šå°‘è¡Œ
 
 	private String content;
-	private int chapterLen; // ÕÂ½ÚµÄ³¤¶È
-	// private int curCharPos; // µ±Ç°×Ö·ûÔÚÕÂ½ÚÖĞËùÔÚÎ»ÖÃ
-	private int charBegin; // Ã¿Ò»Ò³µÚÒ»¸ö×Ö·ûÔÚÕÂ½ÚÖĞµÄÎ»ÖÃ
-	private int charEnd; // Ã¿Ò»Ò³×îºóÒ»¸ö×Ö·ûÔÚÕÂ½ÚÖĞµÄÎ»ÖÃ
+	private int chapterLen; // ç« èŠ‚çš„é•¿åº¦
+	// private int curCharPos; // å½“å‰å­—ç¬¦åœ¨ç« èŠ‚ä¸­æ‰€åœ¨ä½ç½®
+	
+	private int charBegin; // æ¯ä¸€é¡µç¬¬ä¸€ä¸ªå­—ç¬¦åœ¨ç« èŠ‚ä¸­çš„ä½ç½®
+	private int charEnd; // æ¯ä¸€é¡µæœ€åä¸€ä¸ªå­—ç¬¦åœ¨ç« èŠ‚ä¸­çš„ä½ç½®
 	private boolean isfirstPage;
 	private boolean islastPage;
+	
+	
 
 	private Vector<Vector<String>> pagesVe;
 	int pageNum;
+	
+	public int getCharBegin(){
+	    return charBegin;
+	}
+	
+	public int getCharEnd(){
+	    return charEnd;
+	}
+	
+	public boolean getIsFirstPage(){
+	    return isfirstPage;
+	}
+	
+	public boolean getIsLastPage(){
+	    return islastPage;
+	}
 
 	/**
-	 * ÔÚĞÂ½¨Ò»¸öBookPage¶ÔÏóÊ±£¬ĞèÒªÏòÆäÌá¹©Êı¾İ£¬ÒÔÖ§³ÖÆÁÄ»·­Ò³¹¦ÄÜ¡£
+	 * åœ¨æ–°å»ºä¸€ä¸ªBookPageå¯¹è±¡æ—¶ï¼Œéœ€è¦å‘å…¶æä¾›æ•°æ®ï¼Œä»¥æ”¯æŒå±å¹•ç¿»é¡µåŠŸèƒ½ã€‚
 	 * 
 	 * @param screenWidth
-	 *            ÆÁÄ»¿í¶È£¬ÓÃÀ´¼ÆËãÃ¿ĞĞÏÔÊ¾¶àÉÙ×Ö
+	 *            å±å¹•å®½åº¦ï¼Œç”¨æ¥è®¡ç®—æ¯è¡Œæ˜¾ç¤ºå¤šå°‘å­—
 	 * @param screenHeight
-	 *            ÆÁÄ»¸ß¶È£¬ÓÃÀ´¼ÆËãÃ¿Ò³ÏÔÊ¾¶àÉÙĞĞ
+	 *            å±å¹•é«˜åº¦ï¼Œç”¨æ¥è®¡ç®—æ¯é¡µæ˜¾ç¤ºå¤šå°‘è¡Œ
 	 * @param chapter
-	 *            ÕÂ½Ú¶ÔÏó
+	 *            ç« èŠ‚å¯¹è±¡
 	 */
 	public BookPage(int screenWidth, int screenHeight, Chapter chapter) {
 		this.screenHeight = screenHeight;
@@ -72,7 +91,7 @@ public class BookPage {
 	}
 
 	/**
-	 * ³õÊ¼×îºÃ°´ÕÕ¶¨Òå±äÁ¿µÄË³ĞòÀ´³õÊ¼»¯£¬Í³Ò»¡£ÔÚ½«À´ĞèÒªĞŞ¸ÄÄ³¸ö±äÁ¿µÄÊ±ºò£¬ÈİÒ×ÕÒµ½¡£ ¶Ô´úÂëÎ¬»¤Ó¦¸ÃÒ²ºÜÓĞÓÃ°É¡£
+	 * åˆå§‹æœ€å¥½æŒ‰ç…§å®šä¹‰å˜é‡çš„é¡ºåºæ¥åˆå§‹åŒ–ï¼Œç»Ÿä¸€ã€‚åœ¨å°†æ¥éœ€è¦ä¿®æ”¹æŸä¸ªå˜é‡çš„æ—¶å€™ï¼Œå®¹æ˜“æ‰¾åˆ°ã€‚ å¯¹ä»£ç ç»´æŠ¤åº”è¯¥ä¹Ÿå¾ˆæœ‰ç”¨å§ã€‚
 	 */
 	protected void init() {
 		bgBitmap = null;
@@ -99,7 +118,7 @@ public class BookPage {
 
 		visibleWidth = screenWidth - marginWidth * 2;
 		visibleHeight = screenHeight - marginHeight * 2;
-		lineCount = visibleHeight / lineHgight - 2;
+		lineCount = visibleHeight / lineHgight - 2;       // -2 ? line count per page
 		isfirstPage = true;
 		islastPage = false;
 		pagesVe = new Vector<Vector<String>>();
@@ -108,7 +127,7 @@ public class BookPage {
 	}
 
 	public Vector<String> getCurPage() {
-		return linesVe;
+		return linesVe;  // current page content
 	}
 
 	protected void slicePage() {
@@ -133,21 +152,21 @@ public class BookPage {
 					if (lines.size() > lineCount)
 						break;
 				}
-				// Èç¹ûÊÇ°ÑÒ»Õû¶Î¶ÁÈ¡ÍêµÄ»°£¬ĞèÒª¸øµ±Ç°Î»ÖÃ¼Ó1
+				// å¦‚æœæ˜¯æŠŠä¸€æ•´æ®µè¯»å–å®Œçš„è¯ï¼Œéœ€è¦ç»™å½“å‰ä½ç½®åŠ 1  ????
 				if (paragraphStr.length() == 0)
 					curPos += "\n".length();
 			}
-			pagesVe.add(lines);
+			pagesVe.add(lines);  // åˆ†é¡µ
 		}
 
 	}
 
 	/**
-	 * ·­µ½ÏÂÒ»Ò³
+	 * ç¿»åˆ°ä¸‹ä¸€é¡µ
 	 */
 	public boolean nextPage() {
 		if (isLastPage()) {
-			if (!nextChapter()) // Èç¹ûÒÑ¾­µ½±¾ÊéÄ©Î²£¬ÄÇÃ´²»ÄÜ¼ÌĞøÖ´ĞĞ·­Ò³´úÂë
+			if (!nextChapter()) // å¦‚æœå·²ç»åˆ°æœ¬ä¹¦æœ«å°¾ï¼Œé‚£ä¹ˆä¸èƒ½ç»§ç»­æ‰§è¡Œç¿»é¡µä»£ç 
 				return false;
 		}
 		/*
@@ -161,7 +180,7 @@ public class BookPage {
 		 * paint.breakText(paragraphStr, true, visibleWidth, null);
 		 * lines.add(paragraphStr.substring(0, horSize)); paragraphStr =
 		 * paragraphStr.substring(horSize); charEnd += horSize; if (lines.size()
-		 * > lineCount) break; } // Èç¹ûÊÇ°ÑÒ»Õû¶Î¶ÁÈ¡ÍêµÄ»°£¬ĞèÒª¸øµ±Ç°Î»ÖÃ¼Ó1 if
+		 * > lineCount) break; } // å¦‚æœæ˜¯æŠŠä¸€æ•´æ®µè¯»å–å®Œçš„è¯ï¼Œéœ€è¦ç»™å½“å‰ä½ç½®åŠ 1 if
 		 * (paragraphStr.length() == 0) charEnd += "\n".length(); } linesVe =
 		 * lines;
 		 */
@@ -170,11 +189,11 @@ public class BookPage {
 	}
 
 	/**
-	 * ·­µ½ÉÏÒ»Ò³
+	 * ç¿»åˆ°ä¸Šä¸€é¡µ
 	 */
 	public boolean prePage() {
 		if (isFirstPage()) {
-			if (!preChapter()) // Èç¹ûÒÑ¾­µ½±¾ÊéµÚÒ»ÕÂ£¬¾Í²»ÄÜ¼ÌĞøÖ´ĞĞ·­Ò³´úÂë
+			if (!preChapter()) // å¦‚æœå·²ç»åˆ°æœ¬ä¹¦ç¬¬ä¸€ç« ï¼Œå°±ä¸èƒ½ç»§ç»­æ‰§è¡Œç¿»é¡µä»£ç 
 				return false;
 		}
 		/*
@@ -202,7 +221,7 @@ public class BookPage {
 	}
 
 	/**
-	 * Ìøµ½ÏÂÒ»ÕÂ£¬Èô·µ»ØÖµÎªfalse£¬Ôòµ±Ç°ÕÂ½ÚÒÑ¾­Îª×îºóÒ»ÕÂ
+	 * è·³åˆ°ä¸‹ä¸€ç« ï¼Œè‹¥è¿”å›å€¼ä¸ºfalseï¼Œåˆ™å½“å‰ç« èŠ‚å·²ç»ä¸ºæœ€åä¸€ç« 
 	 */
 	public boolean nextChapter() {
 		int order = chapter.getOrder();
@@ -221,7 +240,7 @@ public class BookPage {
 	}
 
 	/**
-	 * Ìøµ½ÉÏÒ»ÕÂ,Èô·µ»ØÖµÎªfalse£¬Ôòµ±Ç°ÕÂ½ÚÒÑ¾­ÎªµÚÒ»ÕÂ
+	 * è·³åˆ°ä¸Šä¸€ç« ,è‹¥è¿”å›å€¼ä¸ºfalseï¼Œåˆ™å½“å‰ç« èŠ‚å·²ç»ä¸ºç¬¬ä¸€ç« 
 	 */
 	public boolean preChapter() {
 		int order = chapter.getOrder();

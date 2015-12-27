@@ -1,4 +1,4 @@
-package com.horse.view;
+﻿package com.horse.view;
 
 import android.content.Context;
 import android.view.View;

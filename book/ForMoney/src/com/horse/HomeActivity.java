@@ -1,11 +1,11 @@
-package com.horse;
+ï»¿package com.horse;
 
 import com.horse.R;
 import com.horse.bean.Book;
 import com.horse.dialog.AboutDialog;
 
 import android.app.Activity;
-import android.app.Dialog;
+//import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -58,7 +58,7 @@ public class HomeActivity extends Activity {
 	};
 	
 	public boolean onCreateOptionsMenu(Menu menu) {  
-	    menu.add(0, 1, 0, "¹ØÓÚ");  
+	    menu.add(0, 1, 0, "å…³äºŽ");  
 	    return super.onCreateOptionsMenu(menu);  
 	}  
 	

@@ -1,4 +1,4 @@
-package com.horse.dialog;
+﻿package com.horse.dialog;
 
 import com.horse.R;
 

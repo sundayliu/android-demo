@@ -1,10 +1,11 @@
-<resources>
+﻿<resources>
 
     <string name="app_name">遮天</string>
     <string name="bookname">遮天</string>
     <string name="author">辰东</string>
     <string name="test_str">测试文字</string>
     <string name="developer">开发者 ：HNU737</string>
+    <string name="copyright">737小说</string>
     
 
     <string-array name="booklists">

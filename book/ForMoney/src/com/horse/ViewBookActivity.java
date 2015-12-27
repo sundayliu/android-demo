@@ -1,4 +1,4 @@
-package com.horse;
+﻿package com.horse;
 
 import com.horse.R;
 import com.horse.bean.Chapter;
@@ -26,21 +26,20 @@ public class ViewBookActivity extends Activity{
 	private Bitmap curBitmap, nextBitmap;
 	private Canvas curCanvas, nextCanvas;
 	private BookPage bookpage ;
-	
 	private Chapter chapter;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		initChapter();
+		init();
+		//initChapter();
 		DisplayMetrics dm = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(dm);
 		int w = dm.widthPixels;
 		int h = dm.heightPixels;
-		System.out.println(w + "\t" + h);
+		//System.out.println(w + "\t" + h);
 		curBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
 		nextBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
 
@@ -63,7 +62,7 @@ public class ViewBookActivity extends Activity{
 				// TODO Auto-generated method stub
 
 				boolean ret = false;
-				boolean toAnotherChapter = true;
+				//boolean toAnotherChapter = true;
 				if (v == pageWidget) {
 					if (e.getAction() == MotionEvent.ACTION_DOWN) {
 						pageWidget.abortAnimation();

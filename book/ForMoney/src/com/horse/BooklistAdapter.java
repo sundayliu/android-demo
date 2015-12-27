@@ -1,4 +1,4 @@
-package com.horse;
+﻿package com.horse;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class BooklistAdapter extends BaseAdapter {
 	private List<String> booklist;
 	private LayoutInflater inflater;
 
-	public BooklistAdapter(List booklist, Context context) {
+	public BooklistAdapter(List<String> booklist, Context context) {
 		this.booklist = booklist;
 		inflater = LayoutInflater.from(context);
 	}

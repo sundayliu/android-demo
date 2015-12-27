@@ -1,15 +1,16 @@
-package com.horse.bean;
+锘縫ackage com.horse.bean;
 
 /**
- * 章节信息，包括标题和内容，及顺序
+ * 绔犺妭淇℃伅锛屽寘鎷爣棰樺拰鍐呭锛屽強椤哄簭
  * @author MJZ
  *
  */
 public class Chapter {	
-	private String title;
-	private String content;
-	private int order;
+	private String title;     // 绔犲悕
+	private String content;   // 绔犺妭鍐呭
+	private int order;        // 绔犺妭搴忓彿
 	
+	// 灞炰簬鍝竴鏈功 涔﹀悕
 	public String getTitle() {
 		return title;
 	}

@@ -1,19 +1,19 @@
-package com.horse.bean;
+ï»¿package com.horse.bean;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Õâ¸öÀà°üº¬ÊéµÄĞÅÏ¢£¬ÊéÃû£¬×÷Õß£¬ÕÂ½ÚÃû³Æ¡£
- * ÓÉÓÚÕâ¸öÀàÔÚ±¾¹¤³ÌÖĞ½öĞèÒªÊµÀı»¯Ò»´Î£¬Òò´Ë½«ËüÉèÎªµ¥Àı¡£
- * ÆäÕâ¸öÀàµÄÎ¨Ò»¶ÔÏóÈí¼şÆô¶¯Ê±±»³õÊ¼»¯£¬ÔÚ¹Ø±ÕÈí¼şÖ®Ç°Ò»°ãÊÇ²»»á·¢ÉúÁË¡£
+ * è¿™ä¸ªç±»åŒ…å«ä¹¦çš„ä¿¡æ¯ï¼Œä¹¦åï¼Œä½œè€…ï¼Œç« èŠ‚åç§°ã€‚
+ * ç”±äºè¿™ä¸ªç±»åœ¨æœ¬å·¥ç¨‹ä¸­ä»…éœ€è¦å®ä¾‹åŒ–ä¸€æ¬¡ï¼Œå› æ­¤å°†å®ƒè®¾ä¸ºå•ä¾‹ã€‚
+ * å…¶è¿™ä¸ªç±»çš„å”¯ä¸€å¯¹è±¡è½¯ä»¶å¯åŠ¨æ—¶è¢«åˆå§‹åŒ–ï¼Œåœ¨å…³é—­è½¯ä»¶ä¹‹å‰ä¸€èˆ¬æ˜¯ä¸ä¼šå‘ç”Ÿäº†ã€‚
  * @author MJZ
  *
  */
 public class Book {
 	private String bookname;
 	private String author;
-	private List<String> chapterList = new ArrayList<String>();
+	private List<String> chapterList = new ArrayList<String>();   // ç« èŠ‚ååˆ—è¡¨
 	
 	private static Book book = new Book();
 	
@@ -39,11 +39,11 @@ public class Book {
 		this.author = author;
 	}
 
-	public List getChapterList() {
+	public List<String> getChapterList() {
 		return chapterList;
 	}
 
-	public void setChapterList(List chapterList) {
+	public void setChapterList(List<String> chapterList) {
 		this.chapterList = chapterList;
 	}
 	
